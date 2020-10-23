@@ -42,7 +42,7 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 
 logger = logging.getLogger("tljh")
 
-def ensure_node():
+def ensure_node(): 
     """
     Ensure nodejs from nodesource is installed
     """
@@ -50,7 +50,6 @@ def ensure_node():
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG v1
 Comment: GPGTools - https://gpgtools.org
-
 mQINBFObJLYBEADkFW8HMjsoYRJQ4nCYC/6Eh0yLWHWfCh+/9ZSIj4w/pOe2V6V+
 W6DHY3kK3a+2bxrax9EqKe7uxkSKf95gfns+I9+R+RJfRpb1qvljURr54y35IZgs
 fMG22Np+TmM2RLgdFCZa18h0+RbH9i0b+ZrB9XPZmLb/h9ou7SowGqQ3wwOtT3Vy
@@ -100,9 +99,9 @@ sckuXINIU3DFWzZGr0QrqkuE/jyr7FXeUJj9B7cLo+s/TXo+RaVfi3kOc9BoxIvy
 =CLGF
 -----END PGP PUBLIC KEY BLOCK-----
     """.strip()
-    apt.trust_gpg_key(key)
-    apt.add_source('nodesource', 'https://deb.nodesource.com/node_10.x', 'main')
-    apt.install_packages(['nodejs'])
+    #apt.trust_gpg_key(key)
+    #apt.add_source('nodesource', 'https://deb.nodesource.com/node_10.x', 'main')
+    #apt.install_packages(['nodejs'])
 
 def remove_chp():
     """
